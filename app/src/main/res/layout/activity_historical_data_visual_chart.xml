@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueBackground" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="历史数据直观图"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@color/colorBlueBackground"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/showHistoricalHeartRateChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心率图"
+            />
+        <Button
+            android:id="@+id/showHistoricalBloodOxygenChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血氧图"
+            />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/interval"
+        android:text="两点间隔：1秒"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

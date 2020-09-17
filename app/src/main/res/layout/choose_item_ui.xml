@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/HRButton"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="实时心率动态图"
+        android:textColor="#fffefe"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/BOButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_green_light"
+        android:text="实时血氧动态图"
+        android:textColor="#fffefe"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/requestTreatButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="请求诊疗" />
+
+    <Button
+        android:id="@+id/historicalDataButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查看历史数据" />
+
+    <Button
+        android:id="@+id/historicalTreatRecordButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查看诊疗记录" />
+
+    <Button
+        android:id="@+id/personalInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查看个人信息"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="2mm" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  心率= "
+            android:textSize="3.5mm"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="10mm"
+            android:textColor="#61649F"
+            android:textSize="4mm"
+            android:layout_height="wrap_content"
+            android:id="@+id/HRText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  血氧= "
+            android:textSize="3.5mm"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="10mm"
+            android:textColor="#61649F"
+            android:textSize="4mm"
+            android:layout_height="wrap_content"
+            android:id="@+id/BLText"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="连接采集设备"
+            android:id="@+id/connnectBTButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="开始测量"
+            android:id="@+id/startCheckButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="上传"
+            android:id="@+id/startUploadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

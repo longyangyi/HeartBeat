@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueBackground" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="心 率"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@color/colorBlueBackground"/>
+
+    <LinearLayout
+        android:id="@+id/HeartRateChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  心率= "
+            android:textSize="3.5mm"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="10mm"
+            android:textColor="#61649F"
+            android:textSize="4mm"
+            android:layout_height="wrap_content"
+            android:id="@+id/HeartRateChartTextValue"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
